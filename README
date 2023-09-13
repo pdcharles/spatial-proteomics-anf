@@ -1,0 +1,28 @@
+Code to reproduce the spatial proteomic affinity network fusion analysis shown in Figures 3E and 6A in Davis et al, "Deep topographic proteomics of a human brain tumour"
+
+Tested on R version 4.3.0 on macOS Monterey 12.6.5
+Directly attached package versions:
+magick - 2.7.5
+Spectrum - 1.1
+ANF - 1.22.0
+data.table - 1.14.8
+
+Installation: 
+1. Clone this repository
+2. Unzip 'sources.zip'
+
+To run from within R, with the 'sources' directory in the current working directory, simply
+> source('spatial_for_publication.r')
+
+Expected output:
+A new directory 'out/' is created, containing:
+
+  Fig 3E with and without sample location-wise cluster annotation, plus a tsv assigning sample locations ('Sample') to clusters ('Cluster'):
+    figforpaper - Naive annotated.jpg
+    figforpaper - Naive.jpg
+    cluster_assignment - Naive.tsv
+
+  Fig 6A with and without sample location-wise cluster annotation, plus a tsv assigning sample locations ('Sample') to clusters ('Cluster'):"
+    figforpaper - Core Matrisome annotated.jpg
+    figforpaper - Core Matrisome.jpg
+    cluster_assignment - Core Matrisome.tsv
